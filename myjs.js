@@ -1,16 +1,3 @@
- // var ipfs = new IpfsApi('ipfs.infura.io', '5001', {protocol: 'http'});
- // ipfs.swarm.peers(function(err, response) {
- //            if (err) {
- //                console.error(err);
- //            } else {
- //                console.log("IPFS - connected to " + response.Strings.length + " peers");
- //                console.log(response);
- //            }
- //        });
-// run with local daemon
-// const ipfsApi = require(‘ipfs-api’);
-// const ipfs = new ipfsApi(‘localhost’, ‘5001’, {protocol:‘http’});
-
  if (typeof web3 !== 'undefined') {
             web3 = new Web3(web3.currentProvider);
         } else {
@@ -54,28 +41,6 @@
     n.once('ready', () => {
       console.log('Online status: ', n.isOnline() ? 'online' : 'offline');
     });
- //    var _hash;
- // $("#push").click(function(){
- // 	n.files.add(new n.types.Buffer($("#string").val()), (err, filesAdded) => {
- //      if (err) {
- //        console.log(err)
- //      }
- //      else
- //      console.log(filesAdded[0].hash);
- //      var _hash=filesAdded[0].hash;
- //   });
- // });  
-
- 	
- // $("#get").click(function(){
- // 	    n.files.cat('QmQzCQn4puG4qu8PVysxZmscmQ5vT1ZXpqo7f58Uh9QfyY', function (err, data) {
- //      if (err) {
- //        return console.error('Error - ipfs files cat', err, res)
- //      }
-
- //      console.log(data.toString())
- //    })
- // });
 
 var _hash;
  $("#push").click(function(){
